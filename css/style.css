@@ -1,0 +1,157 @@
+:root {
+  --white:#F5F5F5;
+  --darkgold:#68571C;
+  --lightgold:#C1A031;
+  --gold:#D7AB28;
+  --bg:#0F0C03;
+}
+
+@font-face {
+  font-family: antipasto;
+  src: url(./Fonts/Antipasto-Pro-Regular-trial.ttf);
+}
+@font-face {
+  font-family: Bigillablod;
+  src: url(./Fonts/Bigilla-Bold.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+main section.view1 {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--bg);
+  color: var(--lightgold);
+}
+main section.view1 .main_box {
+  position: relative;
+}
+main section.view1 .main_box #check {
+  display: none;
+}
+main section.view1 .main_box .btn_one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+main section.view1 .main_box .btn_one .top_btn_one {
+  width: 10rem;
+  height: 4rem;
+  overflow: hidden;
+}
+main section.view1 .main_box .btn_one .top_btn_one img {
+  width: 8rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main section.view1 .main_box .btn_one .bottom_btn_one {
+  font-size: 1.5rem;
+}
+main section.view1 .main_box .btn_one .bottom_btn_one:hover {
+  font-size: 2rem;
+}
+main section.view1 .sidebar_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--bg);
+  position: absolute;
+  left: -150%;
+  font-family: Bigillablod;
+  transition: all 0.5s ease-in-out;
+}
+main section.view1 .sidebar_menu .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+main section.view1 .sidebar_menu .top .logo {
+  width: 20rem;
+  height: 8rem;
+  overflow: hidden;
+}
+main section.view1 .sidebar_menu .top .logo img {
+  width: 15rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+main section.view1 .sidebar_menu .top .btn_two {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+main section.view1 .sidebar_menu .top .btn_two:hover {
+  font-size: 1.5rem;
+}
+main section.view1 .sidebar_menu .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  padding: 2rem;
+}
+main section.view1 .sidebar_menu .bottom .menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main section.view1 .sidebar_menu .bottom .menu ul a {
+  text-decoration: none;
+  color: var(--lightgold);
+}
+main section.view1 .sidebar_menu .bottom .menu ul li {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+main section.view1 .sidebar_menu .bottom .menu ul li:hover {
+  box-shadow: 0 1px 1px var(--gold);
+  border: 1px solid var(--gold);
+}
+main section.view1 .sidebar_menu .bottom .social_media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main section.view1 .sidebar_menu .bottom .social_media ul a {
+  text-decoration: none;
+  color: var(--darkgold);
+}
+main section.view1 .sidebar_menu .bottom .social_media ul a i {
+  font-size: 1rem;
+}
+main section.view1 .sidebar_menu .bottom .social_media ul a i:hover {
+  color: var(--gold);
+  font-size: 1.5rem;
+}
+main section.view1 #check:checked ~ .sidebar_menu {
+  left: 0%;
+}
+main section.view1 #check:checked ~ .btn_one {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
