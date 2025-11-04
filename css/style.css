@@ -30,7 +30,10 @@ main {
   width: 100%;
 }
 main section.view1 {
-  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -61,6 +64,9 @@ main section.view1 .main_box .btn_one .top_btn_one img {
 }
 main section.view1 .main_box .btn_one .bottom_btn_one {
   font-size: 1.5rem;
+}
+main section.view1 .main_box .btn_one .bottom_btn_one i {
+  transition: all 0.5s ease-in-out;
 }
 main section.view1 .main_box .btn_one .bottom_btn_one:hover {
   font-size: 2rem;
@@ -154,4 +160,7 @@ main section.view1 #check:checked ~ .sidebar_menu {
 }
 main section.view1 #check:checked ~ .btn_one {
   display: none;
+}
+main section.view2 {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
